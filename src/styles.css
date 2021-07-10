@@ -1,0 +1,298 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: #c400fe;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.rmap-container {
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+  width: 50%;
+}
+
+.rmap-container.left {
+  left: 0;
+}
+
+.rmap-container.right {
+  left: 50%;
+}
+
+.rmap-container::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 8px);
+  right: -8px;
+  background: #ffffff;
+  border: 2px solid #c400fe;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.rmap-container.right::after {
+  left: -8px;
+}
+
+.rmap-container::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(50% - 1px);
+  right: 8px;
+  background: #c400fe;
+  z-index: 1;
+}
+
+.rmap-container.right::before {
+  left: 8px;
+}
+
+.rmap-container .date {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 8px);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #c400fe;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.rmap-container.left .date {
+  right: -75px;
+}
+
+.rmap-container.right .date {
+  left: -75px;
+}
+
+.rmap-container .icon {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 9px 0;
+  top: calc(50% - 20px);
+  background: #ffc6fd;
+  border: 2px solid #c400fe;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #c400fe;
+  z-index: 1;
+}
+
+.rmap-container.left .icon {
+  right: 56px;
+}
+
+.rmap-container.right .icon {
+  left: 56px;
+}
+
+.rmap-container .content {
+  padding: 30px 90px 30px 60px;
+  background: #ffc6fd;
+  position: relative;
+  border-radius: 500px 200px 200px 500px;
+}
+
+.rmap-container.right .content {
+  padding: 30px 30px 30px 90px;
+  border-radius: 500px 200px 200px 500px;
+}
+
+.rmap-container .content h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: #c400fe;
+}
+
+.rmap-container .content p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+
+@media (max-width: 767.98px) {
+  .timeline::after {
+    left: -15px;
+  }
+
+  .rmap-container {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .timeline i {
+    display: none !important;
+  }
+
+  .rmap-container.right {
+    left: 0%;
+  }
+
+  .rmap-container.left::after, 
+  .rmap-container.right::after {
+    left: 16px;
+  }
+
+  .rmap-container.left::before,
+  .rmap-container.right::before {
+    left: -15px;
+    border-color: transparent #c400fe transparent transparent;
+  }
+
+  .rmap-container.left .date,
+  .rmap-container.right .date {
+    right: auto;
+    left: -4px;
+  }
+
+  .rmap-container.left .icon,
+  .rmap-container.right .icon {
+    right: auto;
+    left: 146px;
+  }
+
+  .rmap-container.left .content,
+  .rmap-container.right .content {
+    padding: 40px ;
+    padding-top: 50px;
+    padding-left: 40px;
+    border-radius: 200px;
+  }
+}
+
+.faq-list li {
+  background-color: #ffc6fd !important;
+}
+
+#main-logo {
+  max-width: 6rem;
+  transition: all 0.3s ease-out;
+}
+
+.navbar-dark.navbar-shrink{
+  /*background-color: #b7e8e4 !important ;*/
+}
+.navbar-shrink #main-logo {
+  max-width: 4rem;
+}
+
+#mainNav {
+  transition: all 0.3s ease-out;
+}
+
+
+#custom-bnb-amount {
+  font-size: 1.1rem;
+}
+
+
+
+.floating-icon {
+  position: fixed;
+  right: 3rem;
+  bottom: 2rem;
+  z-index: 100000;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.floating-icon.ico-2 {
+  right: 9rem
+}
+
+@media (max-width: 768px) {
+  #main-logo {
+    max-width: 4rem;
+  }
+
+  .navbar-shrink #main-logo {
+    max-width: 3rem;
+  }
+
+
+  #custom-bnb-amount {
+    font-size: 0.8rem;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    
+  }
+
+  .floating-icon {
+    right: 0.8rem;
+    bottom: 0.8rem;
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+
+  .floating-icon.ico-2 {
+    right: 5rem;
+  }
+
+}
+
+
+#portfolio {
+  overflow-x: clip;
+}
+
+#mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
+ 
+}
+
+
+.rmap-container ul {
+  padding-left: 15px;
+  padding-top: 5px;
+}
+
+
+
+.twitter-tweet-rendered {
+  margin: 4rem auto !important;
+  margin-bottom: 0;
+}
+
+.faq-list {
+  color: black;
+}
+
+
+.sell-point {
+  color: black !important;
+}

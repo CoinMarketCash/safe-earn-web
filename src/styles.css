@@ -296,3 +296,10 @@
 .sell-point {
   color: black !important;
 }
+
+.card-body.summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

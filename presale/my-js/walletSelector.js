@@ -299,8 +299,8 @@ const contributionChecker = async () => {
     setInterval(async () => {
         const owedDiujInt = await presaleContract.methods.tokensOwned(selectedAccount).call();
         const owed = owedDiujInt / 1e18;
-        $("#tokens-owed").text(owed.toFixed(2));
-        $("#bnb-contributed").text((owed / 46000).toFixed(2));
+        $("#tokens-reserved").text(owed.toFixed(2));
+        $("#bnb-contrib").text((owed / 46000).toFixed(2));
     }, 1000);
 }
 

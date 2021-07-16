@@ -3,6 +3,10 @@
     color: white;
 }
 
+body {
+    background-color: #f9f9fe;
+}
+
 .feature-item.col {
     margin: 0 2rem;
 }
@@ -52,7 +56,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .gradient-bg {
-    background-image: linear-gradient(122deg, #ffd935 0%, #ffa388 100%);
+    background-image: linear-gradient(122deg, #527dfe 0%, #781ce0 100%);
 }
 
 .personal-text {

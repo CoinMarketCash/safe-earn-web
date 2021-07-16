@@ -2580,13 +2580,13 @@ h6 {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;  */
-    color: #fdbf63 !important;
+    color: #fd63b8 !important;
     margin-right: 2rem;
     transition: all 300ms linear 0s !important;
   }
     .feature-item i:before {
       margin-left: 0px;
-      font-size: 60px;
+      font-size: 40px;
       
     }
   .feature-item h4 {

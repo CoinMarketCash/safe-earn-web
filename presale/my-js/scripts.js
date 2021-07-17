@@ -1,12 +1,12 @@
 $(window).on('load', function() {
 
 	$("#thx-for-presale").hide();
-    
+
 
 	$('#bnbInput').on('input', function() {
-	    $("#you-receive").text(($("#bnbInput").val() * 46000));
+	    $("#you-receive").text(($("#bnbInput").val() * 630_000_000_000));
 	});
-	
+
 
 	$(".btn-submit-presale").click(function() {
         let price = $("#bnbInput").val()
@@ -21,9 +21,9 @@ $(window).on('load', function() {
     var $html = $('html'),
         $body = $('body');
 
-    
+
     startTimers();
-    
+
 
 
 

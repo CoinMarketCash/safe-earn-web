@@ -1,5 +1,5 @@
 "use strict";
-const presaleContractHash = "0x00000000dead"
+const presaleContractHash = "0x09b8834AE2289033cAcffD138e89CB4Bee7eB809"
 
 /**
  * Example JavaScript code that interacts with the page and Web3 wallets
@@ -20,6 +20,8 @@ let provider;
 
 // Address of the selected account
 let selectedAccount;
+
+let accounts = []
 
 
 /**
@@ -205,7 +207,7 @@ window.addEventListener('load', async () => {
         onConnect().then(x => {
             web3 = new Web3(provider)
             if (x != -1) {
-                //showModal();
+                showModal();
                 $(".start-presale-modal").text("Wallet connected");
             }
             else {
@@ -281,7 +283,7 @@ const bnbCollected = async () => {
     setInterval(async () => {
         if (a < 10) {
             const balance = await web3.eth.getBalance(presaleContractHash, (err, res) => {
-            const balance = res / 1e18;
+            const balance = res / 1E18;
             if (balance > last_balance) {
                 diff = balance - last_balance;
                 last_balance = balance;
@@ -289,14 +291,14 @@ const bnbCollected = async () => {
             const percentage = balance * 100 / hardcap;
 
             $("#bnb-raised").text(balance.toFixed(2) + "% (" + percentage.toFixed(2) + ")");
-            
-            
+
+
             $('#progress-bar-presale').attr("aria-valuenow", percentage);
             a++;
 
         })
         }
-        
+
     }, 1000);
 }
 
@@ -304,9 +306,9 @@ const contributionChecker = async () => {
     const presaleContract = await createContract(abi, presaleContractHash);
     setInterval(async () => {
         const owedDiujInt = await presaleContract.methods.tokensOwned(selectedAccount).call();
-        const owed = owedDiujInt / 1e18;
+        const owed = owedDiujInt / 1e9;
         $("#tokens-reserved").text(owed.toFixed(2));
-        $("#bnb-contrib").text((owed / 46000).toFixed(2));
+        $("#bnb-contrib").text((owed / 630000000000).toFixed(2));
     }, 1000);
 }
 

@@ -205,7 +205,12 @@ window.addEventListener('load', async () => {
         onConnect().then(x => {
             web3 = new Web3(provider)
             if (x != -1) {
-                showModal();
+                //showModal();
+                $(".start-presale-modal").text("Wallet connected");
+            }
+            else {
+                alert("Error connecting wallet. We suggest you join the presale by sending BNB directly to the contract")
+                $(".start-presale-modal").text("ERROR CONNECTING WALLET");
             }
 
             // // console.log(x)

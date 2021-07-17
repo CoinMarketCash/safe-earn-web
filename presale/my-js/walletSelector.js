@@ -201,6 +201,7 @@ let web3;
 
 window.addEventListener('load', async () => {
     $(".start-presale-modal").on("click", () => {
+        return;
         init();
         onConnect().then(x => {
             web3 = new Web3(provider)

@@ -40,7 +40,7 @@
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400&family=Fredoka+One&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400&family=Fredoka+One&family=Montserrat:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
 
     </head>
     <body>
@@ -60,7 +60,7 @@
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 							<ul class="nav navbar-nav menu_nav ml-auto">
-								<li class="nav-item d-flex align-items-center"> <button class="btn btn-tertiary mr-3 start-presale-modal"> <i class="fas fa-dollar-sign mr-2"></i> Enter Presale </button> </li>
+								<li class="nav-item d-flex align-items-center"> <button class="btn btn-tertiary mr-3 start-presale-modal disabled"> <i class="fas fa-door-closed mr-2"></i> Enter Presale </button> </li>
 								<li class="nav-item"><a class="nav-link" href="#tokenomics">Details</a></li> 
 								<li class="nav-item"><a class="nav-link" target="_blank" href="https://safearn.money">About SafeEarn</a></li> 
 							</ul>
@@ -73,9 +73,9 @@
         
         <!--================Home Banner Area =================-->
         <section class="home-banner-area gradient-bg">
-           	<div class="container box_1620">
+           	<div class="container box_1620" id="main-container">
            		<div class="banner-inner d-flex align-items-center justify-content-around">
-					<div class="col-md-5 coin-container">
+					<div class="col-md-4 coin-container">
 						<div class="coin">
 							<div class="coin__front"></div>
 							<div class="coin__edge">
@@ -98,12 +98,11 @@
 					<div class="personal-text">
 						
 						<h3>SafeEarn</h3>
-						<h4 class="mb-2">Presale</h4>
-
-						<h4 class="subtitle-main"> <b>Double Reflection</b> + <b>Multi-Buyback </b> + <b>Hyper-Deflationary Token. </b></h4>
+						<h4 class="subtitle-main"> <b>Join the Presale of the 1st ever SafeMoon Reflection token </b></h4>
 						<p class="mid-txt">
-							Stack Dogecoin while holding the almighty god of buyback tokens! <br/><br/>
-							Zeus Doge is here to end all doge + rise meme tokens on BSC by distributing DOGEBACK to all holders, who will then earn Dogecoin. Double Reflection just by holding.
+							Hold $SAFEARN, earn SafeMoon. Sell SafeMoon, buy more $SAFEARN, earn even MORE SafeMoon! <br/> <br/>
+							Our token has some other awesome features, such as <b>Zeus BuyBack </b>, <b>AutoBoost</b>, and of course <b>Anti-Whale System</b>!
+							You can <a href="https://safearn.money" target="_blank"> Learn more about it here</a> !
 						</p>
 						<hr class="d-md-none"/>
 						<ul class="list token-info-head">
@@ -114,24 +113,25 @@
 									<i class="far fa-rocket mr-2" style="font-size: 1.7rem;"></i>
 									<span>
 										<b class="mr-1"> Launch: </b>
-										Sunday 18th July
+										Sunday 18th July - 11pm UTC
 									</span>
 								</a>
 							</li>
 							<li>
-								<a href="#" class="d-flex">
+								<a href="https://bscscan.com/address/0xc21e13a10eC7468257ecDA084D1A19afF4E8cd97" class="d-flex">
 									<i class="far fa-scroll mr-2" ></i>
 									<span>
 										<b class="mr-1"> Contract: </b>
-										0x000000000000dead
+										0xc21e13a10eC7468257ecDA084D1A19afF4E8cd97
 									</span>
 									<i class="fas fa-external-link ml-3"></i>
 								</a>
 							</li>
 						</ul>
 						<div class="d-flex justify-content-md-start mt-4">
-							<button class="btn btn-lg btn-tertiary mr-3 start-presale-modal"> <i class="fas fa-dollar-sign mr-2"></i> Enter the Presale </button>
-							<a target="_blank" href="https://t.me/ZeusDoge" class="btn btn-lg btn-secondary"> <i class="fab fa-telegram-plane mr-2"></i> Telegram </a>
+							<button class="btn btn-lg btn-tertiary mr-3 start-presale-modal disabled"> <i class="fas fa-door-closed mr-2"></i> Enter the Presale </button>
+							<!-- <br class="d-block d-md-none"/>
+							<a target="_blank" href="https://t.me/ZeusDoge" class="btn btn-lg btn-secondary"> <i class="fab fa-telegram-plane mr-2"></i> Telegram </a> -->
 						</div>
 					</div>
 
@@ -158,15 +158,19 @@
 
 
 		<!--================Welcome Area =================-->
-		<section class="welcome_area p_120" id="tokenomics">
+		<section class="welcome_area py-5" id="tokenomics">
         	<div class="container">
         		<div class="row welcome_inner">
         			<div class="col-lg-7 px-4 px-md-0">
         				<div class="welcome_text">
         					<h4>Presale Details</h4>
 							<div class="token-description mr-md-5">
-								<p>The most prominent features of this project are an incremental buy-back and lightning auto-boost function built into the smart contract. These functions are designed to trigger variable and incremental buybacks which mathematically adjust based on the trading volume. Simply put: this guarantees all dips from paper-hands will be DESTROYED.
-								<br />Zeus Doge comes ready to take DeFi by storm with an active development team, HUGE marketing budget, and all the right parts to rise and reclaim Olympus!</p>
+								<p>
+									Our custom Presale allows us more flexibility, specially on the Whitelist. <br/>
+									Whitelisted members will enjoy 30 minutes of exclusivity, where only they will be able to buy <br/>
+									After these 30 mins, the presale will become public, so be fast and secure your spot! <br/> <br/>
+
+									The presale price is exaclty the same as the launch price, and all the parameters have been defined to avoid massive dumps, and big whales controlling our project.
 							</div>
 							
         				</div>
@@ -180,13 +184,25 @@
 									<p> <span class="counter">0.0</span> BNB Raised</p>
 									<div class="progress_br">
 										<div class="progress">
-											<div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+											<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 										</div>
 									</div>
 								</div>
 
-								<p class="mb-2">Presale becomes public in:</p>
-								<h1> 0:30:00 </h1>
+								<div class="row listing">
+									<!-- <div class="col">
+										<p class="mb-2">Goes public in:</p>
+										<h1 id="tmr-public"> 0:00:00 </h1>
+									</div>
+									<div class="col">
+										<p class="mb-2">Ends in:</p>
+										<h1 id="tmr-ends"> 0:00:00 </h1>
+									</div> -->
+									<div class="col">
+										<p class="mb-2">Begins in:</p>
+										<h1 id="tmr-starts"> 0:00:00 </h1>
+									</div>
+								</div>
 								
 
 							
@@ -200,21 +216,24 @@
 						<div class="feature-item col mb-5 mb-md-0">
         					<i class="flaticon-sketch"></i>
         					<h4 class="" style="text-align: center;"> 
-								<i class="fas fa-child gradient-icon mr-0 mr-md-4 mb-3 mb-md-0"> </i> 
+								<i class="fas fa-child gradient-icon mr-0 mr-lg-4 mb-3 mb-lg-0"> </i> 
 								<span style="display: inline-block; vertical-align: super;"> Your Contribution </span> </h4>
 							<h1 style="text-align: center;">
 								<span id="bnb-contrib"> 0 </span> BNB
 							</h1>
+							<button class="btn btn-tertiary btn-lg btn-block start-presale-modal mt-5 disabled"> Enter the Presale </button>
         				</div>
 
 						<div class="feature-item col">
         					<i class="flaticon-skyline"></i>
         					<h4 class="" style="text-align: center;"> 
-								<i class="fas fa-coin gradient-icon mr-0 mr-md-4 mb-3 mb-md-0"> </i> 
-								<span style="display: inline-block; vertical-align: super;"> Tokens Reserved </span> </h4>
+								<i class="fas fa-coin gradient-icon mr-0 mr-lg-4 mb-3 mb-lg-0"> </i> 
+								<br class="d-block d-lg-none"/>
+								<span style="display: inline-block; vertical-align: super;"> Your Tokens </span> </h4>
         					<h1 style="text-align: center;">
 								<span id="tokens-reserved"> 0 </span> SAFEARN
 							</h1>
+							<button class="btn btn-tertiary btn-lg btn-block disabled mt-5"> Claim them on Sunday! </button>
         				</div>
 					</div>
 					
@@ -224,11 +243,11 @@
 		
         
 		<!--================My Tabs Area =================-->
-        <section class="mytabs_area p_120 gradient-bg" id="roadmap">
+        <section class="mytabs_area py-5 gradient-bg" id="roadmap">
         	<div class="container">
         		<div class="tabs_inner">
-					<div class="main_title">
-						<h2>Sale Details</h2>
+					<div class="main_title pb-0 mb-4">
+						<h2 style="color: white;">Presale Information</h2>
 					</div>
 					<div class="container">
 						<div class="row" style="background-color: white;">
@@ -237,31 +256,47 @@
 									<tbody>
 									<tr>
 										<th scope="row">Presale Date</th>
-										<td>17th July - 2021</td>
+										<td>17th July 23hs UTC (11pm) - 2021</td>
 									</tr>
 									  <tr>
 										<th scope="row">Total Supply</th>
-										<td>420</td>
+										<td> 1 Quadrillion (Same as SafeMoon)</td>
 									  </tr>
 									  <tr>
-										<th scope="row">Tokens for Presale</th>
-										<td>50%</td>
+										<th scope="row">Minimum Contribution:</th>
+										<td> 0.01 BNB</td>
 									  </tr>
 									  <tr>
-										<th scope="row">Tokens for Liquidity</th>
-										<td>50%</td>
+										<th scope="row">Maximum Contribution:</th>
+										<td> 2 BNB</td>
 									  </tr>
 									  <tr>
 										<th scope="row">Soft Cap</th>
-										<td>50%</td>
+										<td>250 BNB</td>
 									  </tr>
 									  <tr>
 										<th scope="row">Hard Cap</th>
-										<td>50%</td>
+										<td>500 BNB</td>
 									  </tr>
 									  <tr>
 										<th scope="row">Presale Rate</th>
-										<td>100,000 SAFEARN per BNB</td>
+										<td>0.63 Billion SAFEARN per BNB</td>
+									  </tr>
+									  <!-- <tr>
+										<th scope="row">Tokens for Presale</th>
+										<td>0%</td>
+									  </tr>
+									  <tr>
+										<th scope="row">Tokens for Liquidity</th>
+										<td>0%</td>
+									  </tr> -->
+									  <tr>
+										<th scope="row">SafeEarn Contract</th>
+										<td>0xc21e13a10eC7468257ecDA084D1A19afF4E8cd97</td>
+									  </tr>
+									  <tr>
+										<th scope="row">Presale Contract</th>
+										<td>TBA</td>
 									  </tr>
 									</tbody>
 								  </table>
@@ -288,7 +323,7 @@
 				
 			<div class="container-fluid">
         		<div class="d-flex align-items-center justify-content-center px-2 social-container">
-					<a href="https://safearn.money" class="btn btn-lg btn-tertiary mx-3"> <i class="fas fa-globe mr-2"></i> Visit Website </a>
+					<a href="https://safearn.money" class="btn btn-lg btn-tertiary mx-3 mb-4 mb-md-0"> <i class="fas fa-globe mr-2"></i> Visit Website </a>
 					<a href="https://t.me/safe_earn" class="btn btn-lg btn-secondary mx-3"> <i class="fab fa-telegram-plane mr-2"></i> Join Telegram </a>
         		</div>
 			</div>
@@ -314,7 +349,7 @@
         					</div>
         					<ul class="list social">
         						<li><a href="https://t.me/safe_earn" target="_blank"><i class="fab fa-telegram fa-2x"></i></a></li>
-        						<!-- <li><a href="https://twitter.com/zeusdogeBSC" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a></li> -->
+        						<li><a href="https://twitter.com/safearnbsc" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a></li>
         					</ul>
         				</aside>
         			</div>
@@ -333,40 +368,7 @@
 				  </button>
 				</div>
 				<div class="modal-body mx-4 my-3 p-5">
-	  
-				  <div class="faq">
-					  <div class="collapse-icon accordion-icon-rotate">
-						  <div class="card-header" id="headingOne">
-							<h5 class="mb-0">
-							  <a class="btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-	  
-								  I'm having trouble / Need to join manually
-							  </a>
-							</h5>
-						  </div>
-						  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#general-accordion">
-	  
-								  <p class="mb-0 mt-3">
-									  If you do not have MetaMask, you may send BNB to the following address below. Sending more than the maximum contribution or less than the minimum will result in a failed transaction.
-	  
-									<br/>
-									  When interacting with the dApp you MUST raise the gas limit to 100,000. The default gas limit will result in a FAILED transaction if you fail to raise it.
-									  <br/>
-									  This is due to interacting with a smart contract function which requires the limit to be raised.
-									  <br/>
-								  </p>
-	  
-								  <p>
-									  After you send BNB through the dApp or on your own to the contract, you may connect your wallet here to see your contribution was successful.
-	  
-									   </p>
-	  
-								  <div class="alert alert-info mb-2 mt-5" role="alert" style="word-wrap: break-word;">
-									  0x
-								  </div>
-						  </div>
-					  </div>
-				  </div>
+
 	  
 				  <form>
 					<div class="form-group row mt-5 d-flex justify-content-center align-items-end">
@@ -413,7 +415,10 @@
 		  </div>
         
 		
+
 		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="my-js/timer.js"></script>
+
         
         
 		<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.34/dist/web3.min.js"></script>
@@ -442,7 +447,7 @@
         <script src="vendors/counter-up/jquery.counterup.min.js"></script>
         <script src="js/theme.js"></script>
 
-
+		
 
 
 

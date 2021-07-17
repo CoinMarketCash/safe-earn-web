@@ -28,12 +28,12 @@
     animation: shine linear 4s infinite;
 }
 .coin__front {
-    background-image: url("../img/logo.png");
+    background-image: url("../img/logo-token.png");
     background-size: cover;
     transform: translateZ(10px);
 }
 .coin__back {
-    background-image: url("../img/logo.png");
+    background-image: url("../img/logo-token.png");
     background-size: cover;
     transform: translateZ(-10px) rotateY(180deg);
 }

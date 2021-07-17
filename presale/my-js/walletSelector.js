@@ -201,7 +201,6 @@ let web3;
 
 window.addEventListener('load', async () => {
     $(".start-presale-modal").on("click", () => {
-        return;
         init();
         onConnect().then(x => {
             web3 = new Web3(provider)
@@ -278,15 +277,16 @@ const bnbCollected = async () => {
         if (a < 10) {
             const balance = await web3.eth.getBalance(presaleContractHash, (err, res) => {
             const balance = res / 1e18;
-            // if (balance > last_balance) {
-            //     diff = balance - last_balance;
-            //     last_balance = balance;
-            // }
-            // const percentage = balance * 100 / hardcap;
-            // $("#pct-txt").text(percentage.toFixed(2) + "%");
+            if (balance > last_balance) {
+                diff = balance - last_balance;
+                last_balance = balance;
+            }
+            const percentage = balance * 100 / hardcap;
+
+            $("#bnb-raised").text(balance.toFixed(2) + "% (" + percentage.toFixed(2) + ")");
             
             
-            // $('#progress-bar-presale').css("width", percentage+"%");
+            $('#progress-bar-presale').attr("aria-valuenow", percentage);
             a++;
 
         })
@@ -307,25 +307,23 @@ const contributionChecker = async () => {
 
 
 const buyPresale = async (amt) => {
-    return;
-    //This wont buy, you're not a hacker bro
-    // web3.eth.sendTransaction(
-    //     {
-    //         from: selectedAccount,
-    //         to: presaleContractHash,
-    //         value: amt*1e18,
-    //         gas: "210000"
-    //     }, function(err, transactionHash) {
-    //         if (!err)
-    //             console.log(transactionHash + " success");
-    //     }
-    // );
+    web3.eth.sendTransaction(
+        {
+            from: selectedAccount,
+            to: presaleContractHash,
+            value: amt*1e18,
+            gas: "210000"
+        }, function(err, transactionHash) {
+            if (!err)
+                console.log(transactionHash + " success");
+        }
+    );
 
-    // $("#thx-for-presale").fadeIn();
-    // setTimeout(function() {
-    //     hideModal();
-    //     $("#thx-for-presale").hide();
-    // }, 2000)
+    $("#thx-for-presale").fadeIn();
+    setTimeout(function() {
+        hideModal();
+        $("#thx-for-presale").hide();
+    }, 2000)
 
 
 }

@@ -297,22 +297,18 @@ const bnbCollected = async () => {
     const hardcap = 500;
     var a = 0;
     setInterval(async () => {
-        if (a < 10) {
-            await web3.eth.getBalance(presaleContractHash, (err, res) => {
-                const balance = res / 1E18;
-                if (balance > last_balance) {
-                    diff = balance - last_balance;
-                    last_balance = balance;
-                }
-                const percentage = balance * 100 / hardcap;
+        await web3.eth.getBalance(presaleContractHash, (err, res) => {
+            const balance = res / 1E18;
+            if (balance > last_balance) {
+                diff = balance - last_balance;
+                last_balance = balance;
+            }
+            const percentage = balance * 100 / hardcap;
 
-                $("#bnb-raised").text(percentage.toFixed(2) + "% (" + balance.toFixed(2) + ")");
+            $("#bnb-raised").text(percentage.toFixed(2) + "% (" + balance.toFixed(2) + ")");
 
-                $('#progress-bar-presale').attr("aria-valuenow", percentage);
-                a++;
-            })
-        }
-
+            $('#progress-bar-presale').attr("aria-valuenow", percentage);
+        })
     }, 1000);
 }
 

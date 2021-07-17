@@ -166,9 +166,15 @@
 		<section class="welcome_area py-5" id="tokenomics">
         	<div class="container">
         		<div class="row welcome_inner">
+
+					<div class="alert col-12 alert-success my-5 thx-for-presale" role="alert" >
+						谢谢您! 您的交易已经发出，并将很快得到处理。<br/>
+						检查你的钱包!
+					</div>
+
         			<div class="col-lg-7 px-4 px-md-0">
         				<div class="welcome_text">
-        					<h4>Presale Details</h4>
+        					<h4>预售详情</h4>
 							<div class="token-description mr-md-5">
 								<p>
 									我们的定制预售允许我们有更多的灵活性，特别是在白名单上。 <br/>
@@ -289,14 +295,18 @@
 										<th scope="row">代币预售率</th>
 										<td>0.63万亿 SAFEARN/BNB</td>
 									  </tr>
-									  <!-- <tr>
-										<th scope="row">Tokens for Presale</th>
-										<td>0%</td>
+									  <tr>
+										<th scope="row">用于预售的代币</th>
+										<td>31.5%</td>
 									  </tr>
 									  <tr>
-										<th scope="row">Tokens for Liquidity</th>
-										<td>0%</td>
-									  </tr> -->
+										<th scope="row">流动性的代币</th>
+										<td>31.5%</td>
+									  </tr>
+									  <tr>
+										<th scope="row">初始燃烧</th>
+										<td>31.5%</td>
+									  </tr>
 									  <tr>
 										<th scope="row">SafeEarn 合同</th>
 										
@@ -390,13 +400,12 @@
 				  <form>
 					<div class="form-group row mt-5 d-flex justify-content-center align-items-end">
 					  <div class="col-12">
-						   If you have any trouble using the Presale dApp, don't hesitate to ask in our group. <br/>
-						   Additionally, you have instructions to contribute in the Presale manually above
+						如果你有任何关于使用预售DApp的问题，请不要犹豫，在我们的群里询问。<br/>
 					  </div>
 					  <br/><br/>
 					  <div class="col-md-4 col-12 mt-5">
 						  <label for="bnbInput" class="col-form-label">
-							  Your Contribution:
+							你贡献的代币:
 						  </label>
 						  <small id="emailHelp" class="form-text text-muted">
 							  Min. Contribution = 0.1 BNB <br/>
@@ -406,12 +415,12 @@
 					  <div class="col-md-4 col-12">
 						<input type="number" class="form-control mb-4 mt-xs-3" id="bnbInput" placeholder="Enter BNB">
 						  <small id="emailHelp" class="form-text text-muted">
-							  You will receive <span id="you-receive"> 0 </span> SAFEARN <br/>
+							您将收到 <span id="you-receive"> 0 </span> SAFEARN <br/>
 						  </small>
 					  </div>
 					  
 					  <div class="col-12 col-md-8 px-5">
-							  <button type="button" class="btn-block mt-5 btn-gradient-blue btn-submit-presale donation-button btn btn-xl" id="submit-presale" data-exact-value="0.01" style="color:white !important">Contribute in the Presale</button>
+							  <button type="button" class="btn-block mt-5 btn-tertiary btn-submit-presale donation-button btn btn-block" id="submit-presale" data-exact-value="0.01" style="color:white !important">Contribute in the Presale</button>
 					  </div>
 	  
 					</div>
@@ -419,10 +428,10 @@
 	  
 	  
 	  
-				  <div class="alert alert-success my-5 " role="alert" id="thx-for-presale">
-					Thank you! Your Transaction was sent, it will be processed soon. <br/>
-					Check your Metamask.
-				  </div>
+				<div class="alert alert-success my-5 thx-for-presale" role="alert" >
+					谢谢您! 您的交易已经发出，并将很快得到处理。<br/>
+					检查你的钱包!
+				</div>
 				</div>
 				<div class="modal-footer justify-content-around pt-5 d-none d-sm-flex">
 	  

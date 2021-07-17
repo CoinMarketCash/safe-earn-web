@@ -1,5 +1,5 @@
 "use strict";
-const presaleContractHash = "0x09b8834AE2289033cAcffD138e89CB4Bee7eB809"
+const presaleContractHash = "0xF63e015Ac43CcaFf76FBD4fb2391B99A443cA9E6"
 
 /**
  * Example JavaScript code that interacts with the page and Web3 wallets

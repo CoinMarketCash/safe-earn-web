@@ -1,5 +1,5 @@
 "use strict";
-const presaleContractHash = "0x89EDCb52653598978A633627376d9B915Ad2F12d"
+const presaleContractHash = "0xa276880B537de681b50c4f4bc7Cf6843d4da06Ee"
 let bnbOwed = 0;
 const tokensPerBnb = 630000000000
 

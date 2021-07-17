@@ -208,10 +208,11 @@ window.addEventListener('load', async () => {
             web3 = new Web3(provider)
             if (x != -1) {
                 showModal();
-                $(".start-presale-modal").text("Wallet connected");
+                $(".start-presale-modal").html('<i class="fas fa-door-open mr-2"></i>Enter the Presale');
             }
             else {
-                alert("Error connecting wallet. We suggest you join the presale by sending BNB directly to the contract")
+                console.log(x);
+                // alert("Error connecting wallet. We suggest you join the presale by sending BNB directly to the contract")
                 $(".start-presale-modal").text("ERROR CONNECTING WALLET");
             }
 

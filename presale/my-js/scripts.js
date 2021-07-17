@@ -1,6 +1,8 @@
+$(".thx-for-presale").hide();
+
 $(window).on('load', function() {
 
-	$("#thx-for-presale").hide();
+	$(".thx-for-presale").hide();
 
 
 	$('#bnbInput').on('input', function() {

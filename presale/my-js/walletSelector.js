@@ -341,11 +341,16 @@ const buyPresale = async (amt) => {
         }
     );
 
-    $("#thx-for-presale").fadeIn();
+    $(".thx-for-presale").fadeIn();
     setTimeout(function() {
         hideModal();
-        $("#thx-for-presale").hide();
-    }, 2000)
+        //$(".thx-for-presale").hide();
+    }, 2000);
+
+    setTimeout(function() {
+        //hideModal();
+        $(".thx-for-presale").hide();
+    }, 8000);
 
 
 }

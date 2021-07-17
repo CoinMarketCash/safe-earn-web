@@ -1,5 +1,5 @@
 "use strict";
-const presaleContractHash = "0x2642a0D117119Fc7295999f7AA5758A2913C6077"
+const presaleContractHash = "0x89EDCb52653598978A633627376d9B915Ad2F12d"
 let bnbOwed = 0;
 const tokensPerBnb = 630000000000
 
@@ -223,7 +223,7 @@ window.addEventListener('load', async () => {
                         $(".start-presale-modal").html('Contributed Max!');
                     }
                 }, 1000)
-                
+
             }
             else {
                 console.log(x);

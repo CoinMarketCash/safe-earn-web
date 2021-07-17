@@ -1,5 +1,7 @@
 "use strict";
 const presaleContractHash = "0x2642a0D117119Fc7295999f7AA5758A2913C6077"
+let bnbOwed = 0;
+const tokensPerBnb = 630000000000
 
 /**
  * Example JavaScript code that interacts with the page and Web3 wallets
@@ -279,25 +281,23 @@ const checkMetaAndShowModal = async () => {
 const bnbCollected = async () => {
     var last_balance = 0;
     var diff = 0;
-    const hardcap = 1000;
+    const hardcap = 500;
     var a = 0;
     setInterval(async () => {
         if (a < 10) {
-            const balance = await web3.eth.getBalance(presaleContractHash, (err, res) => {
-            const balance = res / 1E18;
-            if (balance > last_balance) {
-                diff = balance - last_balance;
-                last_balance = balance;
-            }
-            const percentage = balance * 100 / hardcap;
+            await web3.eth.getBalance(presaleContractHash, (err, res) => {
+                const balance = res / 1E18;
+                if (balance > last_balance) {
+                    diff = balance - last_balance;
+                    last_balance = balance;
+                }
+                const percentage = balance * 100 / hardcap;
 
-            $("#bnb-raised").text(balance.toFixed(2) + "% (" + percentage.toFixed(2) + ")");
+                $("#bnb-raised").text(percentage.toFixed(2) + "% (" + balance.toFixed(2) + ")");
 
-
-            $('#progress-bar-presale').attr("aria-valuenow", percentage);
-            a++;
-
-        })
+                $('#progress-bar-presale').attr("aria-valuenow", percentage);
+                a++;
+            })
         }
 
     }, 1000);
@@ -308,8 +308,9 @@ const contributionChecker = async () => {
     setInterval(async () => {
         const owedDiujInt = await presaleContract.methods.tokensOwned(selectedAccount).call();
         const owed = owedDiujInt / 1e9;
-        $("#tokens-reserved").text(owed.toFixed(2));
-        $("#bnb-contrib").text((owed / 630000000000).toFixed(2));
+        bnbOwed = owed / tokensPerBnb;
+        $("#tokens-reserved").html(owed/1E9.toFixed(2) + "<b>B</b>");
+        $("#bnb-contrib").text((owed / tokensPerBnb).toFixed(2));
     }, 1000);
 }
 

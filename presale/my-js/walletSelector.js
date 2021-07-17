@@ -209,8 +209,21 @@ window.addEventListener('load', async () => {
         onConnect().then(x => {
             web3 = new Web3(provider)
             if (x != -1) {
-                showModal();
-                $(".start-presale-modal").html('<i class="fas fa-door-open mr-2"></i>Enter the Presale');
+                if (bnbOwed >= 2) {
+                    $(".start-presale-modal").html('Contributed Max!');
+                }
+                else {
+                    showModal();
+                    $(".start-presale-modal").html('<i class="fas fa-door-open mr-2"></i>Enter the Presale');
+                }
+
+                setTimeout(function() {
+                    if (bnbOwed >= 2) {
+                        hideModal();
+                        $(".start-presale-modal").html('Contributed Max!');
+                    }
+                }, 1000)
+                
             }
             else {
                 console.log(x);

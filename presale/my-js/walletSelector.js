@@ -204,6 +204,8 @@ async function onDisconnect() {
 let web3;
 
 window.addEventListener('load', async () => {
+    $("#claim-tokens").on("click", claimPresale)
+
     $(".start-presale-modal").on("click", () => {
         init();
         onConnect().then(x => {
@@ -323,6 +325,11 @@ const contributionChecker = async () => {
     }, 1000);
 }
 
+const claimPresale = async () => {
+    const presaleContract = await createContract(abi, presaleContractHash);
+    await presaleContract.methods.claimTokens().send({from: selectedAccount});
+
+}
 
 const buyPresale = async (amt) => {
     web3.eth.sendTransaction(

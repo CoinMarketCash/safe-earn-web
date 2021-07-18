@@ -6,7 +6,11 @@ $(window).on('load', function() {
 
 
 	$('#bnbInput').on('input', function() {
-	    $("#you-receive").text(($("#bnbInput").val() * 630_000_000_000));
+        var bnbAmount = ($("#bnbInput").val() * 630_000_000_000);
+        if (bnbAmount > 2) {
+            bnbAmount = 2;
+        }
+	    $("#you-receive").text(bnbAmount);
 	});
 
 

@@ -2,7 +2,7 @@
 function startTimers() {
     // doTmr(new Date('7/17/2021 11:00:00 PM UTC'), "tmr-starts", "Presale has STARTED. Refresh website!", true);
     doTmr(new Date('7/17/2021 11:30:00 PM UTC'), "tmr-public", "Presale is PUBLIC");
-    doTmr(new Date('7/18/2021 11:31:00 AM UTC'), "tmr-ends", "Presale has ENDED! <br/> Launch Tomorrow 11pm UTC", true);
+    doTmr(new Date('7/17/2021 11:31:00 AM UTC'), "tmr-ends", "Presale has ENDED! <br/> Launch Tomorrow 11pm UTC", true);
 }
 
 

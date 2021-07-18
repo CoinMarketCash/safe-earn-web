@@ -274,7 +274,7 @@ window.addEventListener('load', async () => {
 });
 
 function showModal() {
-    $('#presaleModal').modal('show');
+    //$('#presaleModal').modal('show');
 }
 
 function hideModal() {

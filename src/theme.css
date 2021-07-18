@@ -189,13 +189,13 @@ h4,
 h5,
 h6 {
 	font-weight: 700;
-	font-family: 'Work Sans';
+	font-family: 'Montserrat';
 	z-index: 25;
 }
 
 h3 {
 	font-weight: 300;
-	font-family: 'Work Sans';
+	/* font-family: 'Work Sans'; */
 }
 
 h6 {
@@ -320,7 +320,7 @@ h6 {
 	background: #ffffff;
 	color: #63c9c1;
 }
-
+/* 
 .btn-primary {
 	background-color: #ff50c9;
 	border-color: #ff50c9;
@@ -353,7 +353,7 @@ h6 {
 .btn-primary:active,
 .btn-primary:focus {
 	box-shadow: 0 0 0 0.2rem rgba(188, 228, 225, .25) !important;
-}
+} */
 
 .btn-light {
 	transition: 0.3s!important;
@@ -495,7 +495,7 @@ h6 {
 
 #mainNav .navbar-brand {
 	color: #ffffff;
-	font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+	/* font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; */
 }
 
 #mainNav .navbar-brand.active,
@@ -511,7 +511,7 @@ h6 {
 	padding: 0.75em 0;
 	letter-spacing: 1px;
 	color: white;
-	font-family: 'Work Sans';
+	/* font-family: 'Work Sans'; */
 	transition: color 0.5s ease;
 }
 
@@ -1198,7 +1198,7 @@ header .container {
 
 .post-entry .post-text h3 a:hover {
 	text-decoration: none;
-	color: #288d85;
+	/* color: #288d85; */
 }
 
 .post-entry .post-text .readmore {
@@ -1361,3 +1361,143 @@ header .container {
 	z-index: 1;
 }
 
+
+
+/*--------------------------------------------------------------
+# F.A.Q
+--------------------------------------------------------------*/
+.faq .faq-list {
+	padding: 0;
+  }
+  
+  .faq .faq-list ul {
+	padding: 0;
+	list-style: none;
+  }
+  
+  .faq .faq-list li + li {
+	margin-top: 15px;
+  }
+  
+  .faq .faq-list li {
+	padding: 20px;
+	background: #fff;
+	border-radius: 4px;
+	position: relative;
+  }
+  
+  .faq .faq-list a {
+	display: block;
+	position: relative;
+	/* font-family: "Poppins", sans-serif; */
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 500;
+	padding: 0 30px;
+	outline: none;
+  }
+  
+  .faq .faq-list .icon-help {
+	font-size: 24px;
+	position: absolute;
+	right: 0;
+	left: 20px;
+	color: #ff16e2 !important;
+  }
+  
+  .faq .faq-list .icon-show, .faq .faq-list .icon-close {
+	font-size: 24px;
+	position: absolute;
+	right: 0;
+	top: 0;
+  }
+  
+  .section-title {
+	  padding-bottom: 1.5rem;
+  
+  }
+  
+  .faq .faq-list p {
+	margin-bottom: 0;
+	padding: 10px 0 0 0;
+  }
+  
+  .faq .faq-list .icon-show {
+	display: none;
+  }
+  
+  .faq .faq-list a.collapsed {
+	color: #343a40 !important;
+  }
+  
+  .faq .faq-list a.collapsed:hover {
+	color: #ff16e2 !important;
+  }
+  
+  .faq .faq-list a.collapsed .icon-show {
+	display: inline-block;
+  }
+  
+  .faq .faq-list a.collapsed .icon-close {
+	display: none;
+  }
+  
+  .faq a {
+	color: #ff16e2 !important;
+	font-weight: 500 !important;
+  }
+  
+  @media (max-width: 1200px) {
+	.faq .faq-list {
+	  padding: 0;
+	}
+  }
+  
+
+  body {
+	/* font-family: "Open Sans", sans-serif; */
+	color: #444444;
+  }
+  
+  a {
+	/* color: #ff16e2; */
+  }
+  
+  a:hover {
+	/* color: #34e5a6; */
+	text-decoration: none;
+  }
+  
+  
+  
+  
+  .section-title h2 {
+	font-size: 14px;
+	font-weight: 500;
+	padding: 0;
+	line-height: 1px;
+	margin: 0 0 5px 0;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #aaaaaa;
+
+  }
+  
+  .section-title h2::after {
+	content: "";
+	width: 120px;
+	height: 1px;
+	display: inline-block;
+	background: #ff50c9;
+	margin: 4px 10px;
+  }
+  
+  .section-title p, .section-title-2 {
+	margin: 0;
+	margin: 0;
+	font-size: 36px;
+	font-weight: 700 !important;
+	text-transform: uppercase;
+	
+	color: #ff50c9;
+  }

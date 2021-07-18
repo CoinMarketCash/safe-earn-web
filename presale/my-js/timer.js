@@ -38,7 +38,7 @@ function doTmr(date, elementId, endMsg, doAlert) {
             element.innerHTML = endMsg;
             setTimeout(function() {
                 if (doAlert) {
-                alert(endMsg);
+                //alert(endMsg);
             }
             }, 100);
         }

@@ -204,6 +204,8 @@ async function onDisconnect() {
 let web3;
 
 window.addEventListener('load', async () => {
+    $("#claim-tokens").on("click", claimPresale)
+
     $(".start-presale-modal").on("click", () => {
         init();
         onConnect().then(x => {
@@ -297,18 +299,21 @@ const bnbCollected = async () => {
     const hardcap = 500;
     var a = 0;
     setInterval(async () => {
-        await web3.eth.getBalance(presaleContractHash, (err, res) => {
-            const balance = res / 1E18;
-            if (balance > last_balance) {
-                diff = balance - last_balance;
-                last_balance = balance;
-            }
-            const percentage = balance * 100 / hardcap;
+        // await web3.eth.getBalance(presaleContractHash, (err, res) => {
+        //     const balance = res / 1E18;
+        //     if (balance > last_balance) {
+        //         diff = balance - last_balance;
+        //         last_balance = balance;
+        //     }
+        //     const percentage = balance * 100 / hardcap;
 
-            $("#bnb-raised").text(percentage.toFixed(2) + "% (" + balance.toFixed(2) + ")");
+        $("#bnb-raised").text("100.34% (501.71)");
 
-            $('#progress-bar-presale').attr("aria-valuenow", percentage);
-        })
+        $('#progress-bar-presale').attr("aria-valuenow", 100);
+            // $("#bnb-raised").text(percentage.toFixed(2) + "% (" + balance.toFixed(2) + ")");
+            //
+            // $('#progress-bar-presale').attr("aria-valuenow", percentage);
+        // })
     }, 1000);
 }
 
@@ -323,6 +328,11 @@ const contributionChecker = async () => {
     }, 1000);
 }
 
+const claimPresale = async () => {
+    const presaleContract = await createContract(abi, presaleContractHash);
+    await presaleContract.methods.claimTokens().send({from: selectedAccount});
+
+}
 
 const buyPresale = async (amt) => {
     web3.eth.sendTransaction(

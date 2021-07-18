@@ -72,7 +72,7 @@ body {
 }
 
 .fill-accent-secondary {
-	background-color: #d340ff;
+	background-color: #ff50c9;
 }
 
 .accent-primary,
@@ -86,7 +86,7 @@ body {
 }
 
 .accent-secondary {
-	color: #d340ff;
+	color: #ff50c9;
 }
 
 .padding-top-xl {
@@ -229,7 +229,7 @@ h6 {
 
 .emphasis-accent {
 	font-weight: 700!important;
-	color: #d340ff;
+	color: #ff50c9;
 }
 
 .fa-1-5x  {font-size:1.5em}
@@ -322,8 +322,8 @@ h6 {
 }
 
 .btn-primary {
-	background-color: #d340ff;
-	border-color: #d340ff;
+	background-color: #ff50c9;
+	border-color: #ff50c9;
 	transition: 0.3s!important;
 	border-radius: 3px;
 }
@@ -517,7 +517,7 @@ h6 {
 
 #mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-	color: #d340ff;
+	color: #ff50c9;
 }
 
 .navbar .btn-donate {
@@ -815,7 +815,7 @@ header .container {
 	height: 100%;
 	transition: all ease 0.5s;
 	opacity: 0;
-	background: #d340ff7a;
+	background: #ff50c97a;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
@@ -1216,7 +1216,7 @@ header .container {
 [id^=blog] .readmore a,
 [id^=blog] .readmore.fa {
 	font-weight: 700;
-	color: #d340ff!important;
+	color: #ff50c9!important;
 }
 
 [id^=blog] .post-meta, [id^=blog] .post-meta a {

@@ -17,7 +17,7 @@
   content: '';
   position: absolute;
   width: 2px;
-  background: #c400fe;
+  background: #ff50c9;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -47,7 +47,7 @@
   top: calc(50% - 8px);
   right: -8px;
   background: #ffffff;
-  border: 2px solid #c400fe;
+  border: 2px solid #ff50c9;
   border-radius: 16px;
   z-index: 1;
 }
@@ -63,7 +63,7 @@
   height: 2px;
   top: calc(50% - 1px);
   right: 8px;
-  background: #c400fe;
+  background: #ff50c9;
   z-index: 1;
 }
 
@@ -78,7 +78,7 @@
   text-align: center;
   font-size: 14px;
   font-weight: bold;
-  color: #c400fe;
+  color: #ff50c9;
   text-transform: uppercase;
   letter-spacing: 1px;
   z-index: 1;
@@ -100,11 +100,11 @@
   padding: 9px 0;
   top: calc(50% - 20px);
   background: #ffc6fd;
-  border: 2px solid #c400fe;
+  border: 2px solid #ff50c9;
   border-radius: 40px;
   text-align: center;
   font-size: 18px;
-  color: #c400fe;
+  color: #ff50c9;
   z-index: 1;
 }
 
@@ -132,7 +132,7 @@
   margin: 0 0 10px 0;
   font-size: 18px;
   font-weight: normal;
-  color: #c400fe;
+  color: #ff50c9;
 }
 
 .rmap-container .content p {
@@ -171,7 +171,7 @@
   .rmap-container.left::before,
   .rmap-container.right::before {
     left: -15px;
-    border-color: transparent #c400fe transparent transparent;
+    border-color: transparent #ff50c9 transparent transparent;
   }
 
   .rmap-container.left .date,
@@ -345,7 +345,7 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;  */
-    color: #e68fff !important;
+    color: #ff50c9 !important;
     margin-right: 2rem;
     transition: all 300ms linear 0s !important;
   }
@@ -380,3 +380,7 @@
     border-color: #fff;
     background: #fff; 
   }
+
+  .gradient-bg {
+    background-image: linear-gradient(122deg, #527dfe 0%, #781ce0 100%);
+}

@@ -243,6 +243,14 @@
   right: 9rem
 }
 
+#mainNav .nav-item a.btn {
+  font-size: 1.1rem;
+}
+
+#mainNav .nav-item a.btn i{
+  font-size: 1.4rem;
+}
+
 @media (max-width: 768px) {
   #main-logo {
     max-width: 4rem;
@@ -252,13 +260,16 @@
     max-width: 3rem;
   }
 
+  /* #mainNav li.nav-item {
+    display: inline !important;
+    max-width: 30%;
+  } */
+
 
   #custom-bnb-amount {
     font-size: 0.8rem;
   }
-  #mainNav .navbar-nav .nav-item .nav-link {
-    
-  }
+  
 
   .floating-icon {
     right: 0.8rem;

@@ -393,4 +393,39 @@
 
   .gradient-bg {
     background-image: linear-gradient(122deg, #527dfe 0%, #781ce0 100%);
+    border-top: 3rem solid black;
+}
+
+
+.personal-text { 
+  width: 50%;
+}
+
+
+@media (max-width: 768px) { 
+  .banner-inner {
+      flex-direction: column !important;
+  }
+
+  .personal-text { 
+    width: 100%;
+  }
+
+  #main-container {
+    padding: 2rem;
+  }
+}
+
+#main-container {
+  padding: 5rem 2rem;
+  bottom: -150px;
+}
+
+.home-banner-area.gradient-bg {
+
+}
+
+#arrow-container {
+/* display mac but not 1080p */
+  cursor: pointer;
 }

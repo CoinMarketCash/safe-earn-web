@@ -286,23 +286,25 @@ h6 {
 	color: #50b9ff;
 	border: 3px #50b9ff solid !important;
 	transition: 0.3s!important;
-	animation: glowbtn 2s 20s infinite;
+	
 }
 
 /* Animation Keyframes*/
 @keyframes glowbtn {
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { opacity: 0; }
+    0% { box-shadow: 0px 0px 17px 4px rgba(128,16,255,0.76); }
+    50% {  box-shadow: 0px 0px 17px 12px rgba(255, 68, 177, 0.76) 	; }
+	100% { box-shadow: 0px 0px 17px 4px rgba(128,16,255,0.76); }
+    
 }
 
 
 .btn-outline-2 {
-	border: 3px #e250ff solid !important;
+	
+	animation: glowbtn 2s 0s infinite;
 }
 
 .btn-outline-2:hover {
-	box-shadow: 0px 0px 17px 4px rgba(128,16,255,0.76) !important	;
+	/* box-shadow: 0px 0px 17px 4px rgba(128,16,255,0.76) !important	; */
 }
 
 .btn-outline:active,

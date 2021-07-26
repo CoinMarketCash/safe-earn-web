@@ -426,7 +426,7 @@
 }
 
 #main-container {
-  padding: 5rem 4rem;
+  padding: 3rem 4rem;
   bottom: -200px;
 }
 
@@ -452,11 +452,14 @@
   margin-right:4rem ;
 }
 
+
+
 .squre-round {
   padding:2rem;
   margin: 2rem 0;
   border-radius: 14px;
   color:white !important;
+  border: 3px solid #ff50c9;
 }
 
 .square-block span {
@@ -490,5 +493,22 @@
 }
 
 #why {
-  margin-top: 15rem;;
+  margin-top: 4rem;
+  padding-top: 6rem;
+}
+
+.main-fold-cta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.main-fold-cta p {
+  margin: auto 0;
+  font-size: 1.4rem;
+}
+
+.feature-item {
+  border: 3px solid #ff50c9 !important;
 }

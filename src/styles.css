@@ -434,6 +434,14 @@
 
 }
 
+/* TODOOO THIS ON:Y ADD MEDIA QUERYY */
+  /* bottom: -20vh;
+}
+
+.home-banner-area {
+  max-height: 70vh;
+} */
+
 #arrow-container {
 /* display mac but not 1080p */
   cursor: pointer;
@@ -456,7 +464,7 @@
 
 .squre-round {
   padding:2rem;
-  margin: 2rem 0;
+  margin:1rem 0;
   border-radius: 14px;
   color:white !important;
   border: 3px solid #ff50c9;

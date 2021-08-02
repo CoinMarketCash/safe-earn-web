@@ -2665,9 +2665,13 @@ h6 {
     color: #777777;
   }
     .token-info-head li a i {
-      color: #ff50c9;
+      color: #7c9bff;
       line-height: inherit !important;
       font-size: 1.3rem;
+    }
+
+    .token-info-head b {
+      color:#7c9bff !important;
     }
 
 .personal-text .personal_social {
